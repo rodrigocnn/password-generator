@@ -27,7 +27,6 @@ export const Button = styled.button`
     svg{
         color: #a4ffaf ;
         font-size: 1rem ;
-
     }
 `
 

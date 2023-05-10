@@ -85,6 +85,7 @@ export const Validation = styled.div`
     background-color: #a33a3a;
     color: #fff ;
     padding: 0.5rem ;
+    font-size: 0.8rem;
 
     button{
       border: 0;

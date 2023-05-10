@@ -14,6 +14,7 @@ export function Password(props: PasswordProps) {
     setShowSnack(true);
   };
 
+
   return (
     <S.Container>
       <S.Content>

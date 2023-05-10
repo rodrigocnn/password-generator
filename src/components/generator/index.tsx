@@ -12,7 +12,7 @@ export function Generator() {
   const [numberOfCaracter, setNumberOfCaracter] = useState(0);
   const [password, setPassword] = useState<string>("P4$5WOrD!");
   const listPasswordRequired = ["Lowercase", "Uppercase", "Numbers", "Symbols"]
-  const [checked, setChecked] = useState<string[]>([]);
+  const [checked, setChecked] = useState<string[]>(["Uppercase"]);
   const [showValidation, setShowValidation] = useState(false)
 
   const randomPassword = (event: any) => {
@@ -79,7 +79,7 @@ export function Generator() {
 
   return (
     <>
-      {showValidation &&
+      {showValidation  &&
       <S.Validation>The Password  Length should at least 6
         <button onClick={()=>setShowValidation(false)}><AiOutlineCloseCircle/></button>
       </S.Validation>
@@ -111,6 +111,8 @@ export function Generator() {
                   type="checkbox"
                   id="uppercase"
                   name="upper"
+
+
                 />
                 <label htmlFor="uppercase">Include {item} Letters</label>
            </S.FormGroup>
